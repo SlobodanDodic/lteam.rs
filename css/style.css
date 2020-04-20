@@ -1,0 +1,256 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background: repeating-linear-gradient(#f3f4f5e8 0px, #e6e9ecf5 0.5px);
+}
+
+img {
+    filter: drop-shadow(6px 6px 10px black);
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/*************************************************MOBILE-MENU************************************************/
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: repeating-radial-gradient(at center, #2d3e58e8 0px, #1b1c1dd3 7px);
+    z-index: 2;
+    display: none;
+}
+
+#mobile-menu a:hover {
+    color: white;
+}
+
+#mobile-menu #close-btn {
+    position: absolute;
+    width: 44px;
+    right: 15px;
+    top: -17px;
+}
+
+.mobile-menu-item {
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px black;
+}
+
+/***************************************************HEADER**************************************************/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header-logo {
+    height: 35px;
+    margin: 5px;
+}
+
+header a {
+    color: white;
+    margin-left: 24px;
+}
+
+header a:hover {
+    color: rgb(160, 220, 255);
+}
+
+header a:visited {
+    color: white;
+}
+
+#header-row {
+    border-top-style: solid;
+    border-color: white;
+    border-bottom-style: double;
+}
+
+#menu-icon {
+    height: 30px;
+    margin: 5px;
+}
+
+#h5-header {
+    float: right;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.fa {
+    font-size: 30px !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.solid-header {
+    position: fixed;
+    background-color: #2d3e58dc;
+    transition: background-color 0.5s ease;
+}
+
+/***************************************************FRONT****************************************************/
+
+#hero-section {
+    background-image: url(../imgs/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #1c2129a9;
+    height: 100vh;
+}
+
+#hero-logo {
+    width: 256px;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+}
+
+/*************************************************ABOUT-US****************************************************/
+
+#h5-about-us {
+    margin-bottom: -10px;
+}
+
+#about-us p:last-child {
+    margin-top: -10px;
+}
+
+#about-us img {
+    width: 100vw;
+}
+
+#about-us p {
+    text-align: justify;
+}
+
+/***************************************************BLOG*****************************************************/
+
+#h5-blog {
+    margin-bottom: -10px;
+}
+
+#blog p:nth-last-of-type(2) {
+    margin-top: -10px;
+}
+
+#blog img {
+    width: 100vw;
+}
+
+/*************************************************CLASSROOM***************************************************/
+
+#classroom p {
+    text-align: justify;
+}
+
+/*************************************************STEPS*****************************************************/
+
+#steps p {
+    text-align: justify;
+}
+
+#steps li {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.div-steps {
+    box-shadow: 1px 1px 4px 2px rgb(63, 43, 43);
+    background: repeating-radial-gradient(#e7edf3e8 0px, #dee9f3f5 5px);
+}
+
+#steps #p-lekar {
+    text-align: center;
+}
+
+/***************************************************INFO*****************************************************/
+
+#info {
+    background-color: rgb(27, 27, 27);
+}
+
+td {
+    padding-left: 0px !important;
+}
+
+.h5-info {
+    padding-bottom: 20px;
+}
+
+.table-hover tbody tr:hover td {
+    background: rgb(0, 0, 0);
+}
+
+#info p {
+    color: rgb(180, 177, 177);
+}
+
+#info p {
+    text-align: justify;
+}
+
+#info a {
+    color: lemonchiffon;
+}
+
+/*************************************************KONTAKT*****************************************************/
+
+/***************************************************MAP*******************************************************/
+
+#map {
+    height: 580px;
+    width: 90vw;
+    position: relative;
+    z-index: -1;
+}
+
+/**************************************************FOOTER*****************************************************/
+
+#footer {
+    background-color: black;
+    border-top: ridge 1px rgb(44, 46, 59);
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 1.39em;
+}
+
+#swallow {
+    background-image: url(../imgs/swallow.png);
+    background-color: rgb(0, 1, 12);
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-top: dotted 1px rgb(72, 74, 87);
+    ;
+}

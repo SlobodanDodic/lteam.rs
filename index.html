@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto škola L-Team</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--------------------------------------------------------------(HEADER)-------------------------------------------------------------->
+
+    <div id="mobile-menu">
+        <a id="close-btn" href="#"><img class="img-fluid py-4" src="imgs/close.png" alt="close"></a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <nav>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#about-us">o nama</a>
+                        </div>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#blog">vozni park</a>
+                        </div>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#classroom">galerija</a>
+                        </div>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#steps">koraci</a>
+                        </div>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#contact">mapa & kontakt</a>
+                        </div>
+                        <div class="mb-4">
+                            <a class="mobile-menu-item text-uppercase h3" href="#info">informacije</a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/pages/category/School/Auto-%C5%A1kola-L-Team-100691768193421/"
+                                target="_blank"><i class="fa fa-facebook-square fa-4x mobile-menu-item mx-2"></i></a>
+                            <a href="" target="_blank"><i
+                                    class="fa fa-linkedin-square fa-4x mobile-menu-item mx-2"></i></a>
+                            <a href="https://www.booking.com/hotel/rs/sombor-19-central-apartment.sr.html?aid=304142;label=gen173bo-1DCBkoggI46AdIJFgDaMEBiAEBmAEkuAEZyAEM2AED6AEB-AEIiAIBmAIhqAID;sid=aa706dcadc17215585e372eba0acd289;checkin=2020-04-19&checkout=2020-04-20&dist=0&from_list=1&group_adults=2&group_children=0&group_rooms=1&sb_price_type=total&type=total&"
+                                target="_blank"><i class="fa fa-rebel fa-4x mobile-menu-item mx-2"
+                                    aria-hidden="true"></i></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="header" class="pt-1">
+        <div class="container-fluid">
+            <div id="header-row" class="row">
+                <div class="col-3">
+                    <img id="header-logo" src="imgs/header-logo.png" alt="logo">
+                </div>
+                <div class="d-none d-lg-block col-9 text-right pt-1">
+                    <a class="text-uppercase h5" href="#about-us">o nama</a>
+                    <a class="text-uppercase h5" href="#blog">vozni park</a>
+                    <a class="text-uppercase h5" href="#classroom">galerija</a>
+                    <a class="text-uppercase h5" href="#steps">koraci</a>
+                    <a class="text-uppercase h5" href="#contact">mapa & kontakt</a>
+                    <a class="text-uppercase h5" href="#info">informacije</a>
+                    <a href="https://www.facebook.com/pages/category/School/Auto-%C5%A1kola-L-Team-100691768193421/"
+                        target="_blank"> <i class="fa fa-facebook-square fa-3x"></i></a>
+                    <a href="" target="_blank"> <i class="fa fa-linkedin-square fa-3x"></i></a>
+                    <a href="https://www.booking.com/hotel/rs/sombor-19-central-apartment.sr.html?aid=304142;label=gen173bo-1DCBkoggI46AdIJFgDaMEBiAEBmAEkuAEZyAEM2AED6AEB-AEIiAIBmAIhqAID;sid=aa706dcadc17215585e372eba0acd289;checkin=2020-04-19&checkout=2020-04-20&dist=0&from_list=1&group_adults=2&group_children=0&group_rooms=1&sb_price_type=total&type=total&"
+                        target="_blank"><i class="fa fa-rebel fa-3x" aria-hidden="true"></i></i></a>
+                </div>
+                <div class="d-lg-none col-9 text-right">
+                    <a id="menu-btn" href="#"><img id="menu-icon" src="imgs/menu.png" alt="menu"></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------------------------------------------------(FRONT)--------------------------------------------------------------->
+
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center pb-5">
+                <div class="col-12 text-center">
+                    <img id="hero-logo" src="imgs/logo.png" alt="logo">
+                    <h1 class="display-2 font-weight-bold">L-Team</h1>
+                    <p class="lead">AUTO ŠKOLA</p>
+                </div>
+            </div>
+        </div>
+        <a id="arrow-down" href="#about-us"><img src="imgs/arrow-down.png" alt="see more"></a>
+    </section>
+
+    <!--------------------------------------------------------------ABOUT-US--------------------------------------------------------------->
+
+    <section id="about-us" class="container py-5">
+        <div class="row">
+            <div class="col">
+                <h5 id="h5-about-us" class="font-weight-bold pt-2">O NAMA</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid rounded-circle" src="imgs/about-us.jpg" alt="Ko čini L-Team?">
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="font-weight-bold pt-2">KO JE L-TEAM?</p>
+                <p>Iako smo tek osnovana firma, zajedno imamo preko 20 godina iskustva u sektoru saobraćaja i želimo to
+                    iskustvo da iskoristimo u svrhu prenošenja znanja budućim vozačima!</p>
+                <p class="font-weight-bold">MISIJA</p>
+                <p class="h6">Jednostavnom idejom spajanja iskustva i entuzijazma naša misija je ne samo obuka, već i
+                    edukacija i u
+                    tome ćemo zajedno uspeti, jer:</p>
+                <ul>
+                    <li>imamo nova vozila za praktičnu obuku,</li>
+                    <li>odlično opremljenu prostoriju za teoretsku obuku,</li>
+                    <li>naprednu tehnologiju,</li>
+                    <li>uvek aktuelna saznanja,</li>
+                    <li>veliko iskustvo i</li>
+                    <li>iskrenu želju da naše puteve učinimo sigurnijim.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="font-weight-bold pt-2">CILJ</p>
+                <p>Primarni cilj auto škole L-Team je profesionalna obuka i to da usluga koju auto škola pruža bude
+                    na jednom višem nivou! Sama obuka ne čini dovoljnu osnovu bez kvalitetne edukacije budućih vozača
+                    i to sa ciljem stvaranja savesnih i odgovornih budućih učesnika u saobraćaju čime i sami aktivno
+                    učestvujemo u smanjenju svih negativnih posledica i potencijalnih opasnosti u saobraćaju.
+                    U prijatnom ambijentu naše učionice sa savremenim sredstvima i opremom naši visoko obučeni predavači
+                    će vam preneti svo nepohodno znanje i iskustvo, ne samo za polaganje ispita, već da biste i u
+                    vremenu nakon polaganja ispita bili bezbedan vozač. Dobrodošli!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------------------------BLOG Vozni park-------------------------------------------------------------->
+
+    <section id="blog" class="container pb-5">
+        <div class="row">
+            <div class="col">
+                <h5 id="h5-blog" class="font-weight-bold">VOZNI PARK</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid img-thumbnail" src="imgs/cars/2cars.jpg" alt="How Now">
+                <p class="font-weight-bold pt-2">Naši automobili</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid img-thumbnail" src="imgs/cars/audi.jpg" alt="A Drift By Simon Christen">
+                <p class="font-weight-bold pt-2">Audi</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid img-thumbnail" src="imgs/cars/cooper.jpg" alt="A Walk In The Park">
+                <p class="font-weight-bold pt-2">Mini Cooper</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------------------------CLASSROOM-------------------------------------------------------------->
+
+    <section id="classroom" class="container pb-5">
+        <div class="row">
+            <div class="col">
+                <h5 id="h5-blog" class="font-weight-bold">UČIONICA</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid rounded" src="imgs/classroom/0.jpg" alt="Fotografija na ulazu">
+                <p>Mart, 2020</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>Primarni cilj auto škole L-Team je profesionalna obuka i to da usluga koju auto škola pruža bude
+                    na jednom višem nivou! Sama obuka ne čini dovoljnu osnovu bez kvalitetne edukacije budućih vozača
+                    i to sa ciljem stvaranja savesnih i odgovornih budućih učesnika u saobraćaju čime i sami aktivno
+                    učestvujemo u smanjenju svih negativnih posledica i potencijalnih opasnosti u saobraćaju.
+                    U prijatnom ambijentu naše učionice sa savremenim sredstvima i opremom naši visoko obučeni predavači
+                    će vam preneti svo nepohodno znanje i iskustvo, ne samo za polaganje ispita, već da biste i u
+                    vremenu nakon polaganja ispita bili bezbedan vozač. Dobrodošli!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid rounded" src="imgs/classroom/1.jpg" alt="Učionica">
+                <p class="font-weight-bold pt-2">Učionica</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid rounded" src="imgs/classroom/2.jpg" alt="Učionica">
+                <p class="font-weight-bold pt-2">Učionica</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid rounded" src="imgs/classroom/3.jpg" alt="Saobraćajni znakovi">
+                <p class="font-weight-bold pt-2">Saobraćajni znakovi</p>
+                <p>Mart, 2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus hendrerit leo...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----------------------------------------------------------------STEPS--------------------------------------------------------------->
+
+    <section id="steps" class="container py-5">
+        <div class="row">
+            <div class="col">
+                <h5 id="h5" class="font-weight-bold pt-2">PUT DO VOZAČKE DOZVOLE</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 1 - Teorijska nastava</p>
+                <p>Prvi korak koji kandidati moraju da savladaju kako bi stekli vozačku dozvolu B kategorije je
+                    TEORIJSKA OBUKA!
+                    Teorijska obuka podrazumeva 40 časova, na kojima će kandidati biti upoznati sa saobraćajnim znacima,
+                    pravilima saobraćaja, tehničkim karakteristikama vozila i potencijalnim rizičnim situacijama u
+                    saobraćaju.
+                </p>
+                <ul>
+                    <li>Svaki čas traje 45 minuta, a u toku jednog dana kandidat može da ima najviše 3 teorijska časa.
+                    </li>
+                    <li>U našoj školi, teorijska obuka se obavlja u specijalno opremljenim učionicama koje poseduju svu
+                        potrebnu opremu, koja olakšava proces usvajanja gradiva.</li>
+                    <li>Našim kandidatima ostavljamo na raspolaganju više dnevnih termina, kako bi proces obuke mogli
+                        lako da usklade sa svakodnevnim obavezama.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 2 - Teorijski ispit</p>
+                <p>Nakon što prođe sve časove teorije, kandidata očekuje TEORIJSKI ISPIT. Teorijski ispit podrazumeva
+                    test, koji je skup slučajno izabranih pitanja iz ukupnog fonda pitanja i tiče se isključivo gradiva
+                    koje se prelazi na teorijskoj obuci za vožnju.</p>
+                <ul>
+                    <li>Test se polaže na računaru u našoj školi i traje 45 minuta.</li>
+                    <li>Da bi kandidat položio test, mora da ima najmanje 85% od ukupnog broja poena.</li>
+                    <li>Kandidat dobija rezultate ispita, odmah nakon što završi test.</li>
+                    <li>Svako testiranje se snima video kamerom i na snimku se vide svi kandidati.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 3 - Lekarsko uverenje</p>
+                <p>Sledeći korak je vađenje lekarskog uverenja. Da bi kandidat stekao uslove za polaganje
+                    praktičnog dela ispita, potrebno je da dostavi LEKARSKO UVERENJE za upravljanje motornim vozilima,
+                    koje izdaju zdravstvene ustanove koje su za to specijalizovane.
+                </p>
+                <p id="p-lekar" class="h4 lead text-uppercase py-4">Auto škola ne sme započeti praktičnu obuku bez
+                    važećeg lekarskog
+                    uverenja!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 4 - Praktična obuka</p>
+                <p>Kada dođe do dela PRAKTIČNE OBUKE, kandidat treba da pohađa 40 časova po 45 minuta, koji su obavezni
+                    i ni sa jednog časa nema pravo odsustva. S druge strane ukoliko kandidat ima potrebu, može uzeti još
+                    praktičnih časova vožnje, koji se posebno plaćaju.
+                </p>
+                <ul>
+                    <li>Napredak i savladavanje gradiva je individualno, te kandidat ne treba da se opterećuje ili gubi
+                        samopouzdanje ukoliko nije u mogućnosti u predviđenih 40 časova da savlada gradivo.
+                    </li>
+                    <li>Iako svi žele da što pre dođu do vozačke dozvole, kvalitet praktičnog dela obuke je uvek na
+                        prvom mestu, te su i zakonom predviđena maksimalno 2 praktična časa u toku dana.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 5 - Ispit iz prve pomoći</p>
+                <p>Pre polaganja praktičnog dela vozačkog ispita, uz lekarsko uverenje, kandidati moraju da prilože i
+                    uverenje o položenoj PRVOJ POMOĆI. Obuka iz prve pomoći se pohađa u organizaciji Crvenog krsta ili
+                    drugih institucija koje su se za to specijalizovale.</p>
+                <ul>
+                    <li>Ova obuka najčešće traje 2 dana i podrazumeva osam do deset časova u trajanju od 45 minuta.
+                    </li>
+                    <li>Nakon završene obuke, kandidati će polagati pismeni test, a na praktičnom delu testa će pokazati
+                        naučene veštine pružanja prve pomoći.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 div-steps">
+                <p class="font-weight-bold pt-2">Korak 6 - Praktični ispit</p>
+                <p>Praktični ispit mora da sadrži najmanje 15 ispitnih zadataka, a jedan od njih će kandidatu biti
+                    dodeljen slučajnim izborom putem računara. Svaki ispitni zadatak podrazumeva radnje koje treba
+                    obaviti na poligonu, trasu kojom će kandidat voziti i radnje koje se izvode na pojedinim delovima
+                    trase.</p>
+                <p>Tokom prvog dela praktičnog ispita na POLIGONU kandidat mora da pokaže da je savladao sledeće
+                    poligonske radnje:</p>
+                <ul>
+                    <li>vožnja napred sa promenom stepena prenosa i unazad sa promenom saobraćajne trake;</li>
+                    <li>parkiranje vozila podužno, vožnjom unazad;</li>
+                    <li>parkiranje vozila pod pravim uglom, vožnjom unazad;</li>
+                    <li>polukružno okretanje vozila sa najviše tri potpuna manevra na prostoru širine dve saobraćajne
+                        trake;</li>
+                    <li>zaustavljanje i polazak vozilom na putu sa usponom;</li>
+                    <li>kočenje i zaustavljanje.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------------------------------------------------KONTAKT-------------------------------------------------------------->
+
+    <section id="contact" class="container mb-3 py-2">
+        <div class="row">
+            <div class="col">
+                <h5 id="h5-blog" class="font-weight-bold">KONTAKT</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img id="sombor" class="img-fluid rounded-circle pb-4" src="imgs/Sombor.jpg" alt="Županija Sombor">
+                <p class="h5 text-center">Sombor</p>
+            </div>
+            <div class="col-12 col-lg-6 pb-5 text-center">
+                <h5 class="h5-info" class="font-weight-bold"></h5>
+                <p class="h5 py-3">Slobodno nas kontaktirajte ili posetite:</p>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><i class="fa fa-address-card mx-2" aria-hidden="true" style="color:blue"></i>Avrama
+                                Mrazovica 1</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope mx-2" aria-hidden="true" style="color:red"></i>info@lteam.rs
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone-square mx-2" aria-hidden="true"
+                                    style="color:orangered"></i>025/5-101-101</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-mobile mx-2" aria-hidden="true" style="color:black"></i>065/123-12-13
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------MAP-------------------------------------------------------------->
+
+    <section id="map" class="container mb-3 py-2">
+        <div class="row">
+            <div id="map" class="col"></div>
+        </div>
+    </section>
+
+
+    <!---------------------------------------------------------------INFO--------------------------------------------------------------->
+
+    <section id="info" class="container-fluid py-5">
+        <div class="container">
+            <div class="row text-light">
+                <div class="col-12 col-lg-6 py-5">
+                    <h5 class="h5-info" class="font-weight-bold">Informativni linkovi</h5>
+                    <p class="mr-3">Na često postavljanja pitanja i nedoumice koje sigurno imate, odgovore možete dobiti
+                        između ostalog i na
+                        zvaničnim prezentacijama Ministarstva građevinarstva, saobraćaja i infrastrukture, AMSS i
+                        Opštine Sombor. </p>
+                    <table class="table table-hover text-secondary">
+                        <tbody>
+                            <tr>
+                                <td><i class="fa fa-info-circle mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:yellow"></i><a target="_blank"
+                                        href="http://www.mup.gov.rs/wps/portal/sr/">Ministarstvo
+                                        građevinarstva, saobraćaja i infrastrukture</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-info-circle mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:yellow"></i><a target="_blank"
+                                        href="https://www.amss.org.rs/">AMSS</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-info-circle mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:yellow"></i><a target="_blank"
+                                        href="https://www.sombor.rs/">Opština Sombor</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-lg-6 py-5">
+                    <h5 class="h5-info" class="font-weight-bold">PDF Program ispita i literatura:</h5>
+                    <table class="table table-hover text-secondary">
+                        <tbody>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i><a
+                                        href="imgs/mup/Osnove bezbednosti saobracaja.pdf" target="_blank">Osnove
+                                        bezbednosti saobraćaja</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i><a href="imgs/mup/Pravila saobracaja.pdf"
+                                        target="_blank">Pravila saobraćaja</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i><a
+                                        href="imgs/mup/Program ispita i literatura - sastavni deo Pravilnika o ispitu.pdf"
+                                        target="_blank">Program ispita i literatura - sastavni deo Pravilnika o
+                                        ispitu</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i><a
+                                        href="imgs/mup/Saobracajna signalizacija.pdf" target="_blank">Saobraćajna
+                                        signalizacija</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i><a href="imgs/mup/Vozaci.pdf"
+                                        target="_blank">Vozači</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"
+                                        style="font-size:48px;color:red"></i>
+                                    <a href="imgs/mup/Vozila.pdf" target="_blank">Vozila</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------------------------------------------------FOOTER------------------------------------------------------------->
+
+    <footer id="footer" class="container-fluid text-light">
+        <div class="row">
+            <div class="col text-center py-3">&copy; allBlackStrat.14 &trade; 2020</div>
+        </div>
+        <div class="row">
+            <div id="swallow" class="col"></div>
+        </div>
+    </footer>
+
+    <!---------------------------------------------------------------LINKS-------------------------------------------------------------->
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/leaflet.js"></script>
+
+</body>
+
+</html>
