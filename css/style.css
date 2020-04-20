@@ -270,6 +270,10 @@ td {
     border-top: dotted 1px rgb(72, 74, 87);
 }
 
+#footerfoto .ffimg {
+    text-align: center;
+}
+
 #footerfoto img {
     width: 129px;
     margin: auto 30%;
@@ -282,23 +286,18 @@ td {
 
 @keyframes beat {
     0% {
-
         transform: scale(1, 1);
     }
     5% {
-
         transform: scale(1.1, 1.1);
     }
     10% {
-
         transform: scale(1, 1);
     }
     50% {
-
         transform: scale(1.2, 1.2);
     }
     100% {
-
         transform: scale(1, 1);
     }
 }
