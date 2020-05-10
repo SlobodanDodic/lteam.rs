@@ -243,6 +243,27 @@ header a:visited {
     background-color: #ff0;
 }
 
+#steps #step7 {
+    position: relative;
+    width: 100%;
+    background: rgb(236, 233, 6);
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+}
+
+#steps #step7:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+}
+
 /***************************************************INFO*****************************************************/
 
 #info {
