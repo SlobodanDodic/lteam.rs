@@ -347,8 +347,8 @@ td {
 /**************************************************FOOTER*****************************************************/
 
 #footer {
-    background-color: black;
-    border-top: ridge 1px rgb(44, 46, 59);
+    background-color: rgb(0, 1, 12);
+/*     border-top: ridge 1px rgb(44, 46, 59); */
     font-family: 'Jacques Francois Shadow', cursive;
     font-size: 2em;
     text-align: center;
