@@ -350,15 +350,14 @@ td {
     background-color: black;
     border-top: ridge 1px rgb(44, 46, 59);
     font-family: 'Jacques Francois Shadow', cursive;
-    font-size: 1.39em;
+    font-size: 2em;
+    text-align: center;
 }
 
 #swallow {
     background-image: url(../imgs/swallow.png);
-    background-color: rgb(0, 1, 12);
     height: 65px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border-top: dotted 1px rgb(72, 74, 87);
 }
